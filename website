@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nepal Pavillon – Spiritueller Laden | Zeil 6, Frankfurt am Main</title>
+  <meta name="description" content="Nepal Pavillon auf der Zeil 6 in Frankfurt am Main: nepalesische Antiquitäten, Klangschalen, Räucherstäbchen, hinduistische & buddhistische Statuen, Gebetsfahnen, Tee und natürliche Seife." />
+  <meta name="theme-color" content="#0B1E3A" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Ambient background layers -->
+  <div class="bg" aria-hidden="true">
+    <div class="grain"></div>
+    <div class="himalaya" id="himalaya">
+      <!-- SVG Mountains (inline, no external images needed) -->
+      <svg viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" role="presentation">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="rgba(10,22,45,1)"/>
+            <stop offset="0.55" stop-color="rgba(10,22,45,0.92)"/>
+            <stop offset="1" stop-color="rgba(4,10,20,1)"/>
+          </linearGradient>
+
+          <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="rgba(255,255,255,0.06)"/>
+            <stop offset="0.5" stop-color="rgba(255,255,255,0.02)"/>
+            <stop offset="1" stop-color="rgba(255,255,255,0.06)"/>
+          </linearGradient>
+
+          <linearGradient id="ridge1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="rgba(255,255,255,0.20)"/>
+            <stop offset="1" stop-color="rgba(255,255,255,0.03)"/>
+          </linearGradient>
+
+          <linearGradient id="ridge2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="rgba(255,255,255,0.14)"/>
+            <stop offset="1" stop-color="rgba(255,255,255,0.02)"/>
+          </linearGradient>
+
+          <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="0.9" />
+          </filter>
+
+          <radialGradient id="glow" cx="30%" cy="22%" r="60%">
+            <stop offset="0" stop-color="rgba(226,44,58,0.18)"/>
+            <stop offset="0.4" stop-color="rgba(20,70,160,0.12)"/>
+            <stop offset="1" stop-color="rgba(0,0,0,0)"/>
+          </radialGradient>
+        </defs>
+
+        <rect width="1440" height="820" fill="url(#sky)"/>
+        <rect width="1440" height="820" fill="url(#glow)"/>
+
+        <!-- Far horizon -->
+        <path d="M0,520 C180,440 320,470 520,420 C710,372 860,410 1040,360 C1230,305 1340,330 1440,290 L1440,820 L0,820 Z"
+              fill="rgba(255,255,255,0.04)"/>
+        <path d="M0,560 C210,470 330,520 540,460 C700,415 885,445 1040,410 C1200,370 1340,400 1440,360 L1440,820 L0,820 Z"
+              fill="rgba(255,255,255,0.03)"/>
+
+        <!-- Main ridges -->
+        <path d="M0,610 C130,520 270,560 390,490 C520,410 630,480 740,420 C880,345 980,450 1120,390 C1260,335 1340,390 1440,340 L1440,820 L0,820 Z"
+              fill="rgba(255,255,255,0.05)" filter="url(#soft)"/>
+
+        <path d="M0,660 C160,560 300,610 450,545 C590,485 660,560 820,500 C980,430 1060,520 1200,470 C1320,427 1380,480 1440,450 L1440,820 L0,820 Z"
+              fill="rgba(255,255,255,0.04)" filter="url(#soft)"/>
+
+        <!-- Foreground mountains -->
+        <path d="M0,740 C120,650 230,670 360,620 C510,560 610,620 740,570 C900,505 1040,620 1180,560 C1300,508 1385,560 1440,530 L1440,820 L0,820 Z"
+              fill="rgba(255,255,255,0.03)"/>
+
+        <!-- Mist layer -->
+        <rect x="0" y="520" width="1440" height="250" fill="url(#mist)" opacity="0.9"/>
+      </svg>
+    </div>
+
+    <div class="prayer-flags" aria-hidden="true">
+      <span class="flag f1"></span><span class="flag f2"></span><span class="flag f3"></span>
+      <span class="flag f4"></span><span class="flag f5"></span>
+      <div class="rope"></div>
+    </div>
+
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top" data-smooth>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Nepal Pavillon</strong>
+          <em>Spirit • Handwerk • Himalaya</em>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#entdecken" data-smooth>Entdecken</a>
+        <a href="#kategorien" data-smooth>Sortiment</a>
+        <a href="#erlebnis" data-smooth>Erlebnis</a>
+        <a href="#besuch" data-smooth>Besuch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-left">
+        <div class="badge">
+          <span class="dot"></span>
+          <span>Zeil 6 • Frankfurt am Main</span>
+        </div>
+
+        <h1>
+          Ein Ort, der nach <span class="accent">Himalaya</span> klingt.
+        </h1>
+
+        <p class="lead">
+          Nepal Pavillon ist ein spiritueller Laden mit <strong>nepalesischen Antiquitäten</strong>,
+          <strong>Klangschalen</strong>, <strong>Räucherstäbchen</strong>, <strong>hinduistischen</strong> &amp;
+          <strong>buddhistischen Statuen</strong> – plus <strong>Gebetsfahnen</strong>, <strong>Tee</strong> und
+          <strong>natürliche Seife</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#kategorien" data-smooth>
+            Sortiment erkunden
+            <span class="btn-glow" aria-hidden="true"></span>
+          </a>
+          <a class="btn ghost" href="#besuch" data-smooth>
+            Anfahrt &amp; Kontakt
+          </a>
+        </div>
+
+        <div class="hero-hints">
+          <div class="hint">
+            <span class="icon" aria-hidden="true">◈</span>
+            <div>
+              <strong>Sanfte Übergänge</strong>
+              <span>Scroll, Klick &amp; Details ohne Hektik.</span>
+            </div>
+          </div>
+          <div class="hint">
+            <span class="icon" aria-hidden="true">⟡</span>
+            <div>
+              <strong>Spielerisch entdecken</strong>
+              <span>Filter, Suche &amp; Inspiration in Sekunden.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="totem" id="totem" aria-hidden="true">
+          <div class="totem-card">
+            <div class="totem-title">Heute entdecken</div>
+            <div class="totem-grid">
+              <div class="chip" data-chip="Klangschalen">Klangschalen</div>
+              <div class="chip" data-chip="Räucherwerk">Räucherwerk</div>
+              <div class="chip" data-chip="Statuen">Statuen</div>
+              <div class="chip" data-chip="Antiquitäten">Antiquitäten</div>
+              <div class="chip" data-chip="Gebetsfahnen">Gebetsfahnen</div>
+              <div class="chip" data-chip="Tee">Tee</div>
+              <div class="chip" data-chip="Natürliche Seife">Natürliche Seife</div>
+            </div>
+            <div class="totem-foot muted">
+              Tipp: Klicke eine Kategorie – die Seite filtert sofort.
+            </div>
+          </div>
+
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover strip -->
+    <section id="entdecken" class="strip">
+      <div class="wrap strip-inner">
+        <div class="strip-card">
+          <h2>Entdecken, ohne zu suchen.</h2>
+          <p class="muted">
+            Wähle eine Stimmung – wir zeigen dir passende Schätze aus Nepal.
+          </p>
+
+          <div class="moods" id="moods">
+            <button class="mood" data-mood="Ruhig">Ruhig</button>
+            <button class="mood" data-mood="Kraftvoll">Kraftvoll</button>
+            <button class="mood" data-mood="Duftend">Duftend</button>
+            <button class="mood" data-mood="Tradition">Tradition</button>
+            <button class="mood" data-mood="Geschenk">Geschenk</button>
+          </div>
+        </div>
+
+        <div class="strip-card secondary">
+          <h3>Mini-Ritual (30 Sekunden)</h3>
+          <ol class="ritual">
+            <li>Atme ein – zähle bis 4.</li>
+            <li>Atme aus – zähle bis 6.</li>
+            <li>Wähle eine Kategorie, die heute passt.</li>
+          </ol>
+          <div class="pulse muted">„Om Mani Padme Hum“</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories / Shop -->
+    <section id="kategorien" class="wrap section">
+      <div class="section-head">
+        <div>
+          <h2>Sortiment</h2>
+          <p class="muted">Filtere nach Kategorie oder tippe in die Suche.</p>
+        </div>
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Suche: Klangschale, Statue, Tee …" autocomplete="off" />
+          <button id="clearSearch" class="icon-btn" aria-label="Suche löschen">×</button>
+        </div>
+      </div>
+
+      <div class="filters" id="filters" role="tablist" aria-label="Kategorien">
+        <button class="filter active" data-filter="alle" role="tab" aria-selected="true">Alle</button>
+        <button class="filter" data-filter="antiquitaeten" role="tab">Antiquitäten</button>
+        <button class="filter" data-filter="klangschalen" role="tab">Klangschalen</button>
+        <button class="filter" data-filter="raeucherwerk" role="tab">Räucherstäbchen</button>
+        <button class="filter" data-filter="statuen" role="tab">Statuen</button>
+        <button class="filter" data-filter="gebetsfahnen" role="tab">Gebetsfahnen</button>
+        <button class="filter" data-filter="tee" role="tab">Tee</button>
+        <button class="filter" data-filter="seife" role="tab">Natürliche Seife</button>
+      </div>
+
+      <div class="grid" id="grid" aria-live="polite">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <div class="note">
+        <span class="note-mark" aria-hidden="true"></span>
+        <p>
+          Jede Auswahl ist handverlesen – viele Stücke sind Unikate. Für Verfügbarkeit &amp; Größen:
+          am besten kurz im Laden vorbeischauen oder anrufen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="erlebnis" class="wrap section">
+      <div class="experience">
+        <div class="experience-left">
+          <h2>Ein Laden wie eine kleine Reise.</h2>
+          <p class="muted">
+            Zwischen Holz, Metall, Duft und Klang öffnet sich ein ruhiger Raum – mitten in der Stadt.
+            Die Objekte erzählen Geschichten von Handwerk, Ritual und Alltag in Nepal.
+          </p>
+
+          <div class="timeline">
+            <div class="step">
+              <div class="step-dot"></div>
+              <div>
+                <strong>Klang</strong>
+                <span>Klangschalen &amp; Glocken: warm, klar, meditativ.</span>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-dot"></div>
+              <div>
+                <strong>Duft</strong>
+                <span>Räucherwerk: von sanft bis erdig – für Atmosphäre.</span>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-dot"></div>
+              <div>
+                <strong>Symbolik</strong>
+                <span>Statuen &amp; Antiquitäten: Hinduismus &amp; Buddhismus.</span>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-dot"></div>
+              <div>
+                <strong>Alltag</strong>
+                <span>Gebetsfahnen, Tee &amp; natürliche Seife – kleine Rituale.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-actions">
+            <button class="btn soft" id="surpriseMe">Überrasche mich</button>
+            <a class="btn ghost" href="#besuch" data-smooth>Jetzt vorbeikommen</a>
+          </div>
+        </div>
+
+        <div class="experience-right">
+          <div class="altar" aria-hidden="true">
+            <div class="altar-top">
+              <div class="candle"></div>
+              <div class="candle"></div>
+              <div class="candle"></div>
+            </div>
+            <div class="altar-mid">
+              <div class="mandala"></div>
+              <div class="mantra">ॐ</div>
+            </div>
+            <div class="altar-bottom muted">
+              Ruhe • Respekt • Schönheit
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section id="besuch" class="wrap section">
+      <div class="visit">
+        <div class="visit-card">
+          <h2>Besuch</h2>
+          <p class="muted">
+            <strong>Nepal Pavillon</strong><br/>
+            Zeil 6, 60313 Frankfurt am Main
+          </p>
+
+          <div class="visit-grid">
+            <div class="visit-item">
+              <div class="visit-label">Adresse</div>
+              <div>Zeil 6<br/>60313 Frankfurt am Main</div>
+            </div>
+            <div class="visit-item">
+              <div class="visit-label">Hinweis</div>
+              <div>Öffnungszeiten &amp; Telefon bitte im Laden/Google ergänzen.</div>
+            </div>
+          </div>
+
+          <div class="visit-actions">
+            <a class="btn primary" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Nepal+Pavillon+Zeil+6+Frankfurt+am+Main">
+              In Google Maps öffnen
+              <span class="btn-glow" aria-hidden="true"></span>
+            </a>
+            <button class="btn ghost" id="copyAddress">Adresse kopieren</button>
+          </div>
+
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </div>
+
+        <div class="visit-card secondary">
+          <h3>Newsletter-Gefühl (ohne Newsletter)</h3>
+          <p class="muted">
+            Speichere die Seite – und komm vorbei, wenn dich etwas ruft.
+          </p>
+          <div class="quote">
+            „Man findet nicht nur Dinge – man findet Momente.“
+          </div>
+          <div class="sig muted">— Nepal Pavillon</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer wrap">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <strong>Nepal Pavillon</strong>
+            <div class="muted">Zeil 6 • Frankfurt am Main</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right muted">
+        <a href="#top" data-smooth>Nach oben</a>
+        <span class="sep">•</span>
+        <a href="#" onclick="alert('Impressum/Datenschutz: Bitte als eigene Seite ergänzen.'); return false;">Impressum</a>
+        <span class="sep">•</span>
+        <a href="#" onclick="alert('Datenschutz: Bitte als eigene Seite ergänzen.'); return false;">Datenschutz</a>
+        <div class="tiny">© <span id="year"></span></div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Produktdetails">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" aria-label="Schließen" data-close>×</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
